@@ -50,7 +50,7 @@ matplotlib
 
 We re-use the data preparation pipeline provided by [Vokenization](https://github.com/airsplay/vokenization#vokenization-vokenization).
 
-**1. Downloading and Pre-Processing Pure-Language Data**
+**1. Download and Pre-Process Pure-Language Data**
 
 We provide scripts to get the English-Wikipeida dataset.
 
@@ -66,7 +66,7 @@ For RoBERTa, it requires an untokenized version of English Wikipedia, so please 
 bash data/wiki/get_data_cased_untokenized.bash en
 ```
 
-**2. Tokenization of Language Data**
+**2. Tokenize Language Data**
 
 We next tokenize the language corpus. It would locally save three files: `<dataset_name>.<tokenizer_name>`, `<dataset_name>.<tokenizer_name>.hdf5`, and `<dataset_name>.<tokenizer_name>.line`.
 Use the following commands accordingly to tokenize the dataset:
