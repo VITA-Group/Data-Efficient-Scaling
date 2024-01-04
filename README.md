@@ -92,7 +92,7 @@ git clone https://huggingface.co/peihaowang/data-efficient-scaling
 
 **2. Run Jupyter Notebook**
 
-We provide Jupyter Notebook `scaling_law.ipynb` to evaluate all checkpoints and plot curves. You will need to specify the following arguments (with default values below) before running it:
+We provide Jupyter Notebook `plot_curves.ipynb` to evaluate all checkpoints and plot curves. You will need to specify the following arguments (with default values below) before running it:
 ```
 # random seed and GPU ID
 seed = 0 
