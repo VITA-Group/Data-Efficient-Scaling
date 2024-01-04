@@ -10,7 +10,7 @@ Peihao Wang, Rameswar Panda, Zhangyang (Atlas) Wang
 
 This repository is based on the project [Vokenization](https://github.com/airsplay/vokenization#vokenization-vokenization).
 
-<!-- ![](teaser.png) -->
+![](teaser.png)
 
 ## Introduction
 
@@ -50,7 +50,8 @@ matplotlib
 
 We re-use the data preparation pipeline provided by [Vokenization](https://github.com/airsplay/vokenization#vokenization-vokenization).
 
-1. **Downloading and Pre-Processing Pure-Language Data**
+**1. Downloading and Pre-Processing Pure-Language Data**
+
 We provide scripts to get the English-Wikipeida dataset.
 
 The script to download and process wiki data are modified from [XLM](https://github.com/facebookresearch/XLM). Note that the data processing pipelines for BERT and RoBERTa are different as they use different tokenizers.
@@ -65,7 +66,7 @@ For RoBERTa, it requires an untokenized version of English Wikipedia, so please 
 bash data/wiki/get_data_cased_untokenized.bash en
 ```
 
-2. **Tokenization of Language Data**
+**2. Tokenization of Language Data**
 
 We next tokenize the language corpus. It would locally save three files: `<dataset_name>.<tokenizer_name>`, `<dataset_name>.<tokenizer_name>.hdf5`, and `<dataset_name>.<tokenizer_name>.line`.
 Use the following commands accordingly to tokenize the dataset:
@@ -82,14 +83,14 @@ You will only need `en.valid.raw.bert-uncased.hdf5` to reproduce results in our 
 
 ## Reproducing Curves
 
-1. **Download Pre-Train Checkpoints**
+**1. Download Pre-Trained Checkpoints**
 
 We release our pre-trained checkpoints at this [Huggingface Hub](https://huggingface.co/peihaowang/data-efficient-scaling). You may download it via the following command:
 ```
 git clone https://huggingface.co/peihaowang/data-efficient-scaling
 ```
 
-2. **Follow Instructions in `scaling_law.ipynb`**
+**2. Run Jupyter Notebook**
 
 We provide Jupyter Notebook `scaling_law.ipynb` to evaluate all checkpoints and plot curves. You will need to specify the following arguments (with default values below) before running it:
 ```
